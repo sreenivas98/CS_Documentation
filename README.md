@@ -1,7 +1,8 @@
 <h1>Hopper System Help</h1>
+
 Assume a user with the below credentials:
 
-***SLU NetID:*** Ilogin01
+***SLU NetID:*** hlogin01
 
 ***Default Password:*** xah48fj@icjdn
 
@@ -11,7 +12,7 @@ When you login in for the first time on hopper, it prompts you to change the pas
 
 ***Step 1:*** Ssh into your SLU hopper account using the below command.
 ```
-ssh Ilogin01@hopper.slu.edu
+ssh hlogin01@hopper.slu.edu
 ```
 
 ***Step 2:*** Enter the current password i.e., the default provided password.
@@ -19,6 +20,7 @@ ssh Ilogin01@hopper.slu.edu
 ***Step 3:*** Enter the new password that you want to set.
 
 **Password Rules:**
+
         ```
         1. The password should atleast 10 characters long.
 
