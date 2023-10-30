@@ -38,7 +38,7 @@ To change the password manually whenever you want. Follow the below steps:
 ssh hlogin01@hopper.slu.edu
 ```
 
-***Step 2:** Type in the below command to change your current password to a new one.
+**Step 2:** Type in the below command to change your current password to a new one.
 ```
 passwd
 ```
@@ -56,3 +56,7 @@ passwd
         3. The new password should not be same as your old password.
         
 **Step 5:** Enter your new password again for confirmation (Both new passwrod and confirm password must match for a successful password change).
+
+<h3>Basic Linux Commands</h3>
+
+**1.**
