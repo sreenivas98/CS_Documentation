@@ -16,6 +16,9 @@ ssh hlogin01@hopper.slu.edu
 ```
 
 **Step 2:** Enter the current password i.e., the default provided password.
+```
+Current Password: xah48fj@icjdn
+```
 
 **Step 3:** Enter the new password that you want to set.
 
