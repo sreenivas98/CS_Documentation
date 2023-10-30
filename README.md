@@ -13,7 +13,8 @@ When you login in for the first time on hopper, it prompts you to change the pas
 ***Step 2:*** Enter the new password that you want to set.
 
         ```
-        ***Password Rules:***
+        
+        <h6>Password Setting Rules to Follow:</h6>
         
         1. The password should atleast 10 characters long.
 
