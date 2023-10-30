@@ -21,12 +21,10 @@ ssh hlogin01@hopper.slu.edu
 
 **Password Rules:**
 
-        ```
         1. The password should atleast 10 characters long.
 
         2. It shuold be a combination of lowercase letters, uppercase letters, numbers and symbols.
 
         3. The new password should not match with your old password.
-        ```
         
 ***Step 4:*** Enter the new password again for confirmation.
