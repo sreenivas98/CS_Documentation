@@ -20,4 +20,5 @@ When you login in for the first time on hopper, it prompts you to change the pas
         2. It shuold be a combination of lowercase letters, uppercase letters, numbers and symbols.
 
         3. The new password should not match with your old password.
+        
         ```
