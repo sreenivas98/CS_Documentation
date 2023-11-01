@@ -10,7 +10,7 @@ Assume a user with the below credentials:
 
 When you login in for the first time on hopper, it prompts you to change the password to a new one. To change password on the first login attempt follow the below steps.
 
-**Step 1:** Ssh into your SLU hopper account using the below command (replace hlogin01 with your SLUNetID).
+**Step 1:** Ssh into your SLU hopper account using the below command (replace hlogin01 with your SLUNetID) and enter the password  v.
 ```
 ssh hlogin01@hopper.slu.edu
 ```
