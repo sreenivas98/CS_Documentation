@@ -337,5 +337,71 @@ Instead of a file, you can use data from standard input. To determine how the co
 
 1. -b: To extract the specific bytes, you need to follow -b option with the list of byte numbers separated by comma. Range of bytes can also be specified using the hyphen(-). It is necessary to specify list of byte numbers otherwise it gives error. Tabs and backspaces are treated like as a character of 1 byte.
 2. -c: To cut by character use the -c option. This selects the characters given to the -c option. This can be a list of numbers separated comma or a range of numbers separated by hyphen(-). Tabs and backspaces are treated as a character. It is necessary to specify list of character numbers otherwise it gives error with this option.
-3. -f: -c option is useful for fixed-length lines. Most unix files doesn’t have fixed-length lines. To extract the useful information you need to cut by fields rather than columns. List of the fields number specified must be separated by comma. Ranges are not described with -f option. cut uses tab as a default field delimiter but can also work with other delimiter by using -d option.
+3. -f: -c option is useful for fixed-length lines. Most unix files doesn’t have fixed-length lines. To extract the useful information you need to cut by fields rather than columns. List of the fields number specified must be separated by comma. Ranges are not described with -f option. 
+4. -d: Cut uses tab as a default field delimiter but can also work with other delimiter by using -d option.
 
+<h1>21. chmod command</h1>
+
+The chmod command modifies directory or file permissions in Linux. Below is the syntax:
+
+```
+chmod [option] [permission] [file_name]
+```
+
+<h1>22. df command</h1>
+
+The df command is used to check a Linux system’s disk space usage in percentage and kilobyte (KB). Below is the syntax:
+
+```
+df [options] [file]
+```
+
+If you don’t specify the item, this command will display information about every mounted file system. These are some acceptable options:
+
+1. -m: Displays information on the file system usage in MBs.
+2. -k: Prints file system usage in KBs.
+3. -T: Shows the file system type in a new column.
+
+<h1>23. du command</h1>
+
+The du command is used to check a file or directory’s storage consumption. Remember to specify the directory path when using this command. Below is the syntax:
+
+```
+du [option] [directory/file path]
+```
+
+The du command has several options, such as:
+
+1. -s: Shows the specified folder’s total size.
+2. -m: Provides folder and file information in MB.
+3. -k: Displays information in KB.
+4. -h: Informs the displayed folders and files’ last modification date.
+
+<h1>24. ps command</h1>
+
+The ps command creates a snapshot of all running processes in your system. Executing it without an option or argument will list the running processes in the shell with the following information:
+
+Unique process ID (PID).
+Type of the terminal (TTY).
+Running time (TIME).
+Command that launches the process (CMD).
+
+Below is the syntax:
+
+```
+ps [option]
+```
+
+The ps command accepts several options, including:
+
+1. -T: Displays all processes associated with the current shell session.
+2. -u username: Lists processes associated with a specific user.
+3. -A: Shows all the running processes.
+
+<h1>25. top command</h1>
+
+The top command displays running processes and the system’s real-time condition, including resource utilization. It helps identify resource-intensive processes, enabling you to disable them easily. Below is the syntax:
+
+```
+top
+```
