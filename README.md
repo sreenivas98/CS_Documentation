@@ -46,7 +46,7 @@ ssh hlogin01@hopper.slu.edu
 passwd
 ```
 
-**Step 3:** Enter your current password password.
+**Step 3:** Enter your current password.
 
 **Step 4:** Enter your new password that you want to set.
 
@@ -120,3 +120,222 @@ The rmdir command is used to delete an empty directory in Linux. Below is the sy
 ```
 rmdir [directory_name]
 ```
+
+<h1>6. rm command:</h1> 
+
+Use the rm command to permanently delete files within a directory. Below is the syntax:
+
+```
+rm [option] [filename1] [filename2] [filename3]
+```
+
+Adjust the number of files in the command according to your needs. If you encounter an error, ensure you have the write permission in the directory.
+
+To modify the command, add the following options:
+
+1. -i: prompts a confirmation before deletion.
+2. -f: allows file removal without a confirmation.
+3. -r: deletes files and directories recursively.
+
+***Note:*** Use the rm command with caution since deletion is irreversible. Avoid using the -r and -f options since they may wipe all your files. Always add the -i option to avoid accidental deletion.
+
+<h1>7. cp command:</h1> 
+
+Use the cp command to copy files or directories, including their content, from your current location to another. It has various use cases, such as:
+
+1. Copying one file from the current directory to another folder. Specify the file name and target path:
+
+```   
+cp filename.txt /home/username/Documents
+```
+
+2. Duplicating multiple files to a directory. Enter the file names and the destination path:
+
+```
+cp filename1.txt filename2.txt filename3.txt /home/username/Documents
+```
+
+3. Copying a file’s content to another within the same directory. Enter the source and the destination file:
+
+```
+cp filename1.txt filename2.txt
+```
+
+4. Duplicating an entire directory. Pass the -R flag followed by the source and destination directory:
+
+```
+cp -R /home/username/Documents /home/username/Documents_backup
+```
+
+<h1>8. mv command</h1>
+
+Use the mv command to move or rename files and directories. To move items, enter the file name followed by the destination directory:
+
+```
+mv filename.txt /home/username/Documents
+```
+
+Meanwhile, use the following syntax to rename a file in Linux with the mv command:
+
+```
+mv old_filename.txt new_filename.txt
+```
+
+<h1>9. touch command</h1>
+
+The touch command lets you create an empty file in a specific directory path. Below is the syntax:
+
+```
+touch path/filename.extension
+```
+
+If you omit the path, the command will create the item in the current folder.
+
+<h1>10. file command</h1>
+
+The file command lets you check a file type – whether it is a text, image, or binary. Below is the syntax:
+
+```
+file [option] [filename]
+```
+
+To modify the command, add the following options:
+
+1. -k: Add this option to display more detailed information.
+2. -i: Add this option to show the file’s MIME type.
+
+<h1>11. zip command</h1>
+
+The zip command lets you compress items into a ZIP file with the optimal compression ratio. Below is the syntax:
+
+```
+zip [options] [zipfile] [file1] [file2] ...
+```
+
+To modify the command, add the following options:
+
+1. -u: Use this option to add an additional file to an existing zip archive.
+2. -d: Use this option to remove a file from the zip archive.
+3. -m: Use this option to delete the original files after creating a zipped archive.
+4. -r: Use this option to zip the directory recursively.
+5. -e: We can create a password-protected zip file using the -e option with the zip command.
+
+<h1>12. zipinfo command</h1>
+
+Use the zipinfo command to view the content of the zip file. Below is the syntax:
+
+```
+zipinfo [zipfilename]
+```
+
+<h1>13. unzip command</h1>
+
+The unzip command lets you extract the compressed file items into a ZIP. Below is the syntax:
+
+```
+unzip [options] [zipfile] .
+```
+
+To modify the command, add the following options:
+
+1. -d: If you want to unzip a file to a different directory, use the -d option with the unzip command. For example, to unzip a file named students.zip to a students directory, run the following command:
+
+```
+unzip students.zip -d students
+```
+
+2. -o: If you want to overwrite the existing files without being prompted.
+3. -l: Use the -l option with the unzip command to view the content of a zipped file.
+4. -Z: To list the content of a zipped file with detailed information about the file, use the -Z option
+
+<h1>14. nano, vi commands</h1>
+
+Linux lets users edit files using a text editor like nano or vi. Below are the syntaxes:
+
+```
+nano filename
+```
+
+```
+vi filename
+```
+
+If the target file doesn’t exist, these editors will create one. We recommend nano if you want to quickly edit text files. Meanwhile, use vi for scripting and programming.
+
+<h1>15. cat command</h1>
+
+Concatenate or cat is one of the most used Linux commands. It lists, combines, and writes file content to the standard output. Below is the syntax:
+
+```
+cat [filename]
+```
+
+There are various ways to use the cat command:
+
+1. cat > file.txt: Creates a new file with name file.txt.
+2. cat file1.txt file2.txt > file3.txt: Merges file1.txt with file2.txt and stores the output in filename3.txt.
+3. tac file.txt: Displays content in reverse order.
+
+<h1>16. grep command</h1>
+
+The global regular expression or grep command lets you find a word by searching the content of a file. This Linux command prints all lines containing the matching strings, which is useful for filtering large log files. Below is the syntax:
+
+```
+grep [pattern/string] [filename]
+```
+
+<h1>17. head command</h1>
+
+The head command prints the first ten lines of a text file or piped data in your command-line interface. Below is the syntax:
+
+```
+head [option] [file]
+```
+
+The head command accepts several options, such as:
+
+1. -n: This option changes the number of lines printed. For example, head -n 5 shows the first five lines.
+2. -c: This option prints the file's first customized number of bytes. For example, head -c 50 shows the first 50 bytes of data from the file.
+3. -q: This option disables headers specifying the file name. 
+
+<h1>18. tail command</h1>
+
+The tail command displays the last ten lines of a file, which is useful for checking new data and errors. Below is the syntax:
+
+```
+tail [option] [file]
+```
+
+The tail command accepts several options, such as:
+
+1. -n: This option changes the number of lines printed. For example, tail -n 5 shows the last five lines.
+2. -c: This option prints the file's last customized number of bytes. For example, tail -c 50 shows the last 50 bytes of data from the file.
+
+<h1>19. sort command</h1>
+
+The sort command rearranges lines in a file in a specific order. It doesn’t modify the actual file and only prints the result as Terminal outputs. Below is the syntax:
+
+```
+sort [option] [file]
+```
+
+By default, this command will sort the lines in alphabetical order, from A to Z. To modify the sorting, use these options:
+
+1. -r: Reverses the sorting order to descending.
+2. -n: Sorts the file numerically.
+3. -k: Reorders data in a specific field.
+
+<h1>20. cut command</h1>
+
+The cut command retrieves sections from a file and prints the result as Terminal outputs.Below is the syntax:
+
+```
+cut [option] [file]
+```
+
+Instead of a file, you can use data from standard input. To determine how the command sections the line, use the following options:
+
+1. -b: To extract the specific bytes, you need to follow -b option with the list of byte numbers separated by comma. Range of bytes can also be specified using the hyphen(-). It is necessary to specify list of byte numbers otherwise it gives error. Tabs and backspaces are treated like as a character of 1 byte.
+2. -c: To cut by character use the -c option. This selects the characters given to the -c option. This can be a list of numbers separated comma or a range of numbers separated by hyphen(-). Tabs and backspaces are treated as a character. It is necessary to specify list of character numbers otherwise it gives error with this option.
+3. -f: -c option is useful for fixed-length lines. Most unix files doesn’t have fixed-length lines. To extract the useful information you need to cut by fields rather than columns. List of the fields number specified must be separated by comma. Ranges are not described with -f option. cut uses tab as a default field delimiter but can also work with other delimiter by using -d option.
+
