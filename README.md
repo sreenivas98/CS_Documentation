@@ -95,7 +95,7 @@ Depending on your current location, it requires either the full path or the dire
 
 Omitting the arguments will take you to the home folder. Here are some navigation shortcuts:
 
-1. cd ~[username]:  goes to another user’s home directory.
+1. cd ~[username] - goes to another user’s home directory.
 2. cd .. - switches to the previous directory.
 3. cd- – switches to the previous directory and prints the path of current working directory after switching.
 
