@@ -440,4 +440,46 @@ scp hlogin01@hopper.slu.edu:/student/hlogin01/.ssh/id_rsa .
 
 <h3>Cloning a repository</h3>
 
-To clone a repository onto your local machine 
+To clone a repository onto your local machine follow the below steps:
+
+**Step 1:** Login in to your git.cs.slu.edu account open the repository that you want to clone.
+
+**Step 2:** On the right side of the screen click on ***clone*** button and copy the text under clone with ssh.
+
+**Step 3:** Open a new terminal and redirect to the folder where you want to clone the repository and use the below command to clone it.
+
+```
+git clone [copied text]
+```
+
+<h3>Commit the changes from local machine to remote repository on git</h3>
+
+To commit the changes you made to files or add new files you created from your local repository to the remote repository you can follow the below steps.
+
+**Step 1:** The first is to add the changed/newly created file from your local working repository to the staging area. To do that use the below command.
+
+```
+git add [filename]
+```
+
+***Note:*** If you want to add multiple files use ***git add .*** .
+
+**Step 2:** The next step is to commit the changes in the staging area. To do that use the commit command and remember that every commit command needs to have a commit message.
+
+```
+git commit -m "[your commit message]"
+```
+
+**Step 3:** The last step is to push the commited changes to remote repository. To do that use the below command.
+
+```
+git push
+```
+
+<h3>Fetch the changes from remote repository on git to local machine</h3>
+
+To fetch the changes from remote repository to your local machine's repository use the below command.
+
+```
+git pull
+```
