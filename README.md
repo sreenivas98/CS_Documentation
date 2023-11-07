@@ -405,3 +405,39 @@ The top command displays running processes and the system’s real-time conditio
 ```
 top
 ```
+
+<h1>Git Help</h1>
+
+Assume a user with the below credentials:
+
+***SLU NetID:*** hlogin01
+
+A user needs to copy ssh keys from the their hopper server to local machine to seamlessly clone repositories, push new changes to remote repository and pull new changes from remote repository once for every new local machine.
+
+<h3>Copying ssh key to local machine</h3>
+
+To copy the ssh key from hopper server to your local machine you need to follow the below steps:
+
+**Step 1:** Open a terminal and login in to your hopper account.
+
+**Step 2:** Use the below command to check if there is a .ssh hidden folder available in your remote hopper system.
+
+```
+ls -a
+```
+
+***Note:*** To know more about the -a option in ls command refer to the basic linux commands section.
+
+**Step 3:** Open a new terminal and redirect to your home directory if you are not in your home directory on your local machine using ***cd*** command.
+
+**Step 4:** After the above step use the below command to securely copy ssh keys from your remote hopper system to your local machine (replace hlogin01 with you SLU netID).
+
+```
+scp hlogin01@hopper.slu.edu:/student/hlogin01/.ssh/id_rsa .
+```
+
+***Note:*** To know more about scp command refer to the basic linux commands section.
+
+<h3>Cloning a repository</h3>
+
+To clone a repository onto your local machine 
