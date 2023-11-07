@@ -62,7 +62,7 @@ passwd
 
 <h3>Basic Linux Commands</h3>
 
-<h6>1.  ls command:</h6> 
+<h4>1.  ls command:</h4> 
 
 The ls command lists files and directories in your system. Below is the syntax:
 
@@ -75,7 +75,7 @@ If you remove the path, the ls command will show the current working directory's
 1. -a: lists all files, including hidden ones.
 2. -lh: converts sizes to readable formats, such as MB, GB, TB. Also displays read, write and executable access of all files/folders in the mentioned path for all the three groups(user, group, others).
 
-<h6>2.  pwd command:</h6> 
+<h4>2.  pwd command:</h4> 
 
 The pwd command prints your current working directory’s path, like /home/directory/path. Below is the syntax:
 
@@ -83,7 +83,7 @@ The pwd command prints your current working directory’s path, like /home/direc
 pwd
 ```
 
-<h6>3.  cd command:</h6> 
+<h4>3.  cd command:</h4> 
 
 The cd command is used to navigate the Linux files and directories. Below is the syntax
 
@@ -99,7 +99,7 @@ Omitting the arguments will take you to the home folder. Here are some navigatio
 2. cd .. - switches to the previous directory.
 3. cd- – switches to the previous directory and prints the path of current working directory after switching.
 
-<h6>4.  mkdir command:</h6> 
+<h4>4.  mkdir command:</h4> 
 
 The mkdir command is used to create one or multiple directories and set their permissions. Below is the syntax:
 
@@ -113,7 +113,7 @@ To create a folder within a directory, use the path as the command parameter. Fo
 2. -m: sets the folder permissions. For instance, enter mkdir -m777 directory to create a directory with read, write, and execute permissions for all users.
 3. -v: prints a message for each created directory.
 
-<h6>5.  rmdir command:</h6> 
+<h4>5.  rmdir command:</h4> 
 
 The rmdir command is used to delete an empty directory in Linux. Below is the syntax:
 
@@ -121,7 +121,7 @@ The rmdir command is used to delete an empty directory in Linux. Below is the sy
 rmdir [directory_name]
 ```
 
-<h6>6. rm command:</h6> 
+<h4>6. rm command:</h4> 
 
 Use the rm command to permanently delete files within a directory. Below is the syntax:
 
@@ -139,7 +139,7 @@ To modify the command, add the following options:
 
 ***Note:*** Use the rm command with caution since deletion is irreversible. Avoid using the -r and -f options since they may wipe all your files. Always add the -i option to avoid accidental deletion.
 
-<h6>7. cp command:</h6> 
+<h4>7. cp command:</h4> 
 
 Use the cp command to copy files or directories, including their content, from your current location to another. It has various use cases, such as:
 
@@ -166,8 +166,21 @@ cp filename1.txt filename2.txt
 ```
 cp -R /home/username/Documents /home/username/Documents_backup
 ```
+<h4>8. scp command</h4>
 
-<h6>8. mv command</h6>
+The scp command securely copies files or directories between systems over a network. Below is the syntax:
+
+```
+scp [option] [source username@IP]:/[directory and file name] [destination username@IP]:/[destination directory]
+```
+
+For a local machine, omit the hostname and IP address. Use the following options to modify the copying behavior:
+
+1. -P: changes the port for copying. The default is 22.
+2. -l: limits the scp command’s bandwidth.
+3. -C: compresses transferred data to make it smaller.
+
+<h4>9. mv command</h4>
 
 Use the mv command to move or rename files and directories. To move items, enter the file name followed by the destination directory:
 
@@ -181,7 +194,7 @@ Meanwhile, use the following syntax to rename a file in Linux with the mv comman
 mv old_filename.txt new_filename.txt
 ```
 
-<h6>9. touch command</h6>
+<h4>10. touch command</h4>
 
 The touch command lets you create an empty file in a specific directory path. Below is the syntax:
 
@@ -191,7 +204,7 @@ touch path/filename.extension
 
 If you omit the path, the command will create the item in the current folder.
 
-<h6>10. file command</h6>
+<h4>11. file command</h4>
 
 The file command lets you check a file type – whether it is a text, image, or binary. Below is the syntax:
 
@@ -204,7 +217,7 @@ To modify the command, add the following options:
 1. -k: Add this option to display more detailed information.
 2. -i: Add this option to show the file’s MIME type.
 
-<h6>11. zip command</h6>
+<h4>12. zip command</h4>
 
 The zip command lets you compress items into a ZIP file with the optimal compression ratio. Below is the syntax:
 
@@ -220,7 +233,7 @@ To modify the command, add the following options:
 4. -r: Use this option to zip the directory recursively.
 5. -e: We can create a password-protected zip file using the -e option with the zip command.
 
-<h6>12. zipinfo command</h6>
+<h4>13. zipinfo command</h4>
 
 Use the zipinfo command to view the content of the zip file. Below is the syntax:
 
@@ -228,7 +241,7 @@ Use the zipinfo command to view the content of the zip file. Below is the syntax
 zipinfo [zipfilename]
 ```
 
-<h6>13. unzip command</h6>
+<h4>14. unzip command</h4>
 
 The unzip command lets you extract the compressed file items into a ZIP. Below is the syntax:
 
@@ -248,7 +261,7 @@ unzip students.zip -d students
 3. -l: Use the -l option with the unzip command to view the content of a zipped file.
 4. -Z: To list the content of a zipped file with detailed information about the file, use the -Z option
 
-<h6>14. nano, vi commands</h6>
+<h4>15. nano, vi commands</h4>
 
 Linux lets users edit files using a text editor like nano or vi. Below are the syntaxes:
 
@@ -262,7 +275,7 @@ vi filename
 
 If the target file doesn’t exist, these editors will create one. We recommend nano if you want to quickly edit text files. Meanwhile, use vi for scripting and programming.
 
-<h6>15. cat command</h6>
+<h4>16. cat command</h4>
 
 Concatenate or cat is one of the most used Linux commands. It lists, combines, and writes file content to the standard output. Below is the syntax:
 
@@ -276,7 +289,7 @@ There are various ways to use the cat command:
 2. cat file1.txt file2.txt > file3.txt: Merges file1.txt with file2.txt and stores the output in filename3.txt.
 3. tac file.txt: Displays content in reverse order.
 
-<h6>16. grep command</h6>
+<h4>17. grep command</h4>
 
 The global regular expression or grep command lets you find a word by searching the content of a file. This Linux command prints all lines containing the matching strings, which is useful for filtering large log files. Below is the syntax:
 
@@ -284,7 +297,7 @@ The global regular expression or grep command lets you find a word by searching 
 grep [pattern/string] [filename]
 ```
 
-<h6>17. head command</h6>
+<h4>18. head command</h4>
 
 The head command prints the first ten lines of a text file or piped data in your command-line interface. Below is the syntax:
 
@@ -298,7 +311,7 @@ The head command accepts several options, such as:
 2. -c: This option prints the file's first customized number of bytes. For example, head -c 50 shows the first 50 bytes of data from the file.
 3. -q: This option disables headers specifying the file name. 
 
-<h6>18. tail command</h6>
+<h4>19. tail command</h4>
 
 The tail command displays the last ten lines of a file, which is useful for checking new data and errors. Below is the syntax:
 
@@ -311,7 +324,7 @@ The tail command accepts several options, such as:
 1. -n: This option changes the number of lines printed. For example, tail -n 5 shows the last five lines.
 2. -c: This option prints the file's last customized number of bytes. For example, tail -c 50 shows the last 50 bytes of data from the file.
 
-<h6>19. sort command</h6>
+<h4>20. sort command</h4>
 
 The sort command rearranges lines in a file in a specific order. It doesn’t modify the actual file and only prints the result as Terminal outputs. Below is the syntax:
 
@@ -325,7 +338,7 @@ By default, this command will sort the lines in alphabetical order, from A to Z.
 2. -n: Sorts the file numerically.
 3. -k: Reorders data in a specific field.
 
-<h6>20. cut command</h6>
+<h4>21. cut command</h4>
 
 The cut command retrieves sections from a file and prints the result as Terminal outputs.Below is the syntax:
 
@@ -340,7 +353,7 @@ Instead of a file, you can use data from standard input. To determine how the co
 3. -f: -c option is useful for fixed-length lines. Most unix files doesn’t have fixed-length lines. To extract the useful information you need to cut by fields rather than columns. List of the fields number specified must be separated by comma. Ranges are not described with -f option. 
 4. -d: Cut uses tab as a default field delimiter but can also work with other delimiter by using -d option.
 
-<h6>21. chmod command</h6>
+<h4>22. chmod command</h4>
 
 The chmod command modifies directory or file permissions in Linux. Below is the syntax:
 
@@ -348,7 +361,7 @@ The chmod command modifies directory or file permissions in Linux. Below is the 
 chmod [option] [permission] [file_name]
 ```
 
-<h6>22. df command</h6>
+<h4>23. df command</h4>
 
 The df command is used to check a Linux system’s disk space usage in percentage and kilobyte (KB). Below is the syntax:
 
@@ -362,7 +375,7 @@ If you don’t specify the item, this command will display information about eve
 2. -k: Prints file system usage in KBs.
 3. -T: Shows the file system type in a new column.
 
-<h6>23. du command</h6>
+<h4>24. du command</h4>
 
 The du command is used to check a file or directory’s storage consumption. Remember to specify the directory path when using this command. Below is the syntax:
 
@@ -377,7 +390,7 @@ The du command has several options, such as:
 3. -k: Displays information in KB.
 4. -h: Informs the displayed folders and files’ last modification date.
 
-<h6>24. ps command</h6>
+<h4>25. ps command</h4>
 
 The ps command creates a snapshot of all running processes in your system. Executing it without an option or argument will list the running processes in the shell with the following information:
 
@@ -398,7 +411,7 @@ The ps command accepts several options, including:
 2. -u username: Lists processes associated with a specific user.
 3. -A: Shows all the running processes.
 
-<h6>25. top command</h6>
+<h4>26. top command</h4>
 
 The top command displays running processes and the system’s real-time condition, including resource utilization. It helps identify resource-intensive processes, enabling you to disable them easily. Below is the syntax:
 
